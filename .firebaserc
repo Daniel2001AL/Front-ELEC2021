@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "poli-elec2021": {
+      "hosting": {
+        "POLI-ELEC2021": [
+          "poli-elec2021"
+        ]
+      }
+    }
+  }
+}

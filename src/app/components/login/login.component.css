@@ -1,0 +1,57 @@
+.container-fluid{
+    border: 5px solid blue;
+    margin-right: 0px;
+    height:625px;
+    position: relative;  
+}
+
+.container-md{
+   
+    border: 5px solid red;
+    margin-left: 0px;
+    margin-top: -625px;
+    height: 625px;
+    background-color: mediumvioletred;
+}
+
+@media (min-width: 50px){
+    .container-md{
+        max-width: 616px;
+    }
+}
+
+@media (min-width: 500px){
+    .container-fluid{
+        max-width: 750px;
+    }
+}
+
+.fontText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.texto{
+    width: 300px;
+    margin-top: 50px;
+    border-color: black;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100% ;
+}
+
+.loginB{
+    margin-top: 50px;
+    background-color: mediumvioletred;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.img2{
+    width: 350px;
+    margin-top: 210px;
+}
