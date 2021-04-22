@@ -1,17 +1,17 @@
 .container-fluid{
-    border: 5px solid blue;
     margin-right: 0px;
     height:625px;
     position: relative;  
+    z-index: 2;
 }
 
 .container-md{
    
-    border: 5px solid red;
+    
     margin-left: 0px;
     margin-top: -625px;
     height: 625px;
-    background-color: mediumvioletred;
+    background-color: rgb(150, 0, 150);
 }
 
 @media (min-width: 50px){
@@ -45,13 +45,28 @@
 }
 
 .loginB{
-    margin-top: 50px;
+    margin-top: 100px;
+    width: 200px;
     background-color: mediumvioletred;
     border-radius: 5px;
     border-color: black;
+    box-shadow: 3px 3px black;
 }
 
 .img2{
     width: 350px;
     margin-top: 210px;
+    z-index: 1;
+}
+.img3{
+    width: 200px;
+    margin-top: -250px;
+    margin-left: 100px;
+    z-index: -0;
+}
+.img4{
+    width: 200px;
+    margin-top: -30px;
+    margin-left: -150px;
+    z-index: -0;
 }
