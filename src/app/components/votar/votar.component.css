@@ -1,0 +1,80 @@
+.x{
+    background-color: rgba(243, 127, 175, 0.822); 
+}
+.y{
+    background-color: rgba(255, 197, 221, 0.822);
+}
+.logoEnc{
+    text-align: right;
+}
+.bienvenida{
+    text-align: left;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin-top: 15px;
+    text-shadow: 1px 1px black;
+}
+
+.text{
+    font-family: 'Antonio', sans-serif;
+}
+
+
+@media (min-width: 992px){
+    #logo{
+        width: 15vw;
+        height: 8vw;
+    }
+    #titule{
+        font-size: 4vw;
+        margin-left: 80px;
+    }
+    #label1{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    #labelM{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    #inputEF{
+        margin-left: 190px;
+        margin-top: -28px;
+        width: 25vw;
+    }
+    #inputM{
+        margin-top: -28px;
+        margin-left: 150px;
+        width: 25vw;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    #logo{
+        width: 15vw;
+        height: 8vw;
+    }
+    #titule{
+        font-size: 4vw;
+    }
+}
+@media (min-width: 576px) and (max-width:767px) {
+    #logo{
+        width: 17vw;
+        height: 10vw;
+    }
+    #titule{
+        font-size: 4vw;
+    }
+}
+@media (max-width: 575px){
+    #logo{
+        width: 20vw;
+        height: 12vw;
+        margin-top: -50px;
+    }
+    #titule{
+        font-size: 5vw;
+        margin-left: 20px;
+    }
+
+}
