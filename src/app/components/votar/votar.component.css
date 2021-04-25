@@ -1,12 +1,49 @@
+/* Filas */
+
 .x{
-    background-color: rgba(243, 127, 175, 0.822); 
+    background-color: rgba(243, 127, 175, 0.822);
 }
 .y{
     background-color: rgba(255, 197, 221, 0.822);
 }
+
+.z{
+    background-color: rgb(253, 165, 202);
+}
+.w{
+    background-color: rgb(253, 165, 202);  
+}
+.f{
+    background-color: rgba(255, 197, 221, 0.822);
+}
+.pri{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+.pan{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+.btn{
+    background-color: deeppink;
+    border: 1px solid deeppink;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px black;
+}
+
+/* Imagenes */
 .logoEnc{
     text-align: right;
 }
+
+
+/* Texto */
 .bienvenida{
     text-align: left;
     font-family: 'Bebas Neue', cursive;
@@ -19,12 +56,44 @@
     font-family: 'Antonio', sans-serif;
 }
 
+.textoEnc{
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.ley{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* Media Querys */
+
+    /* Laptos o PC */
 
 @media (min-width: 992px){
+   
+   /* Imagenes */
     #logo{
         width: 15vw;
         height: 8vw;
     }
+    #logoPri{
+        width: 10vw;
+        height: 8vw;
+        margin-top: 12px;
+    }
+    #logoPan{
+        width: 10vw;
+        height: 8vw;
+        margin-top: 12px;
+        padding-right: 5px;
+    }
+
+    /* Textos */
     #titule{
         font-size: 4vw;
         margin-left: 80px;
@@ -37,6 +106,26 @@
         margin-left: 40px;
         margin-top: 20px;
     }
+    #Enc{
+        font-size: 3vw;
+        margin-top: 15px;
+    }
+    #ldatos{
+        font-size: 2vw;
+    }
+    #ley1{
+        margin-top: -90px;
+        width: 30vw;
+        margin-left: 125px;
+        font-size: 1.5vw;
+    }
+    #ley2{
+        margin-top: -70px;
+        width: 30vw;
+        margin-left: 120px;
+        font-size: 1.5vw;
+    }
+    /* Objetos */
     #inputEF{
         margin-left: 190px;
         margin-top: -28px;
@@ -47,15 +136,63 @@
         margin-left: 150px;
         width: 25vw;
     }
+    #boton{
+        width: 20vw;
+        height: 5vw;
+    }
+    /*Containers  */
+    #containerPartidos{
+        height: 10vw;
+        width: 40vw;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-bottom: 15px;
+    }
 }
+
+    /* Tablets */
 @media (min-width: 768px) and (max-width:991px) {
     #logo{
         width: 15vw;
         height: 8vw;
     }
+    #logoPri{
+        width: 12vw;
+        height: 10vw;
+        margin-top: 10px;
+    }
+    #logoPan{
+        width: 12vw;
+        height: 10vw;
+        margin-top: 10px;
+    }
     #titule{
         font-size: 4vw;
     }
+    #Enc{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    #ley1{
+        margin-top: -65px;
+        width: 30vw;
+        margin-left: 90px;
+        font-size: 1.5vw;
+    }
+    #ley2{
+        margin-top: -55px;
+        width: 30vw;
+        margin-left: 90px;
+        font-size: 1.5vw;
+    }
+    /*Containers  */
+    #containerPartidos{
+        margin-bottom: 10px;
+        width: 42vw;
+        margin-left: 25px;
+        height: 12vw;
+    }
+
 }
 @media (min-width: 576px) and (max-width:767px) {
     #logo{
@@ -66,15 +203,81 @@
         font-size: 4vw;
     }
 }
+
+/* Celulares */
 @media (max-width: 575px){
+
+    /* Imagenes */
     #logo{
         width: 20vw;
         height: 12vw;
         margin-top: -50px;
     }
+    #logoPri{
+        width: 12vw;
+        height: 10vw;
+        margin-top: 10px;
+    }
+    #logoPan{
+        width: 12vw;
+        height: 10vw;
+        margin-top: 10px;
+    }
+
+    /* Textos */
     #titule{
         font-size: 5vw;
         margin-left: 20px;
     }
+
+    #label1{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    #labelM{
+        margin-left: 173px;
+        margin-top: -21px;
+    }
+    #Enc{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    #ley1{
+        margin-top: -42px;
+        width: 50vw;
+        margin-left: 90px;
+        font-size: 3vw;
+    }
+    #ley2{
+        margin-top: -35px;
+        width: 50vw;
+        margin-left: 90px;
+        font-size: 3vw;
+    }
+
+    /* Objetos */
+
+    #inputEF{
+        margin-left: 60px;
+        margin-top: -28px;
+        width: 25vw;
+        font-size: 2.5vw;
+        padding: 5px;
+    }
+    #inputM{
+        margin-top: -28px;
+        margin-left: 233px;
+        width: 25vw;
+        font-size: 2.5vw;
+        padding: 5px;
+    }
+       /*Containers  */
+    #containerPartidos{
+    margin-bottom: 10px;
+    width: 80vw;
+    margin-left: 25px;
+    height: 16vw;
+    }
+    
 
 }

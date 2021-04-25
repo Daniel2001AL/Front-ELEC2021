@@ -12,4 +12,8 @@ export class VotarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  x(){
+    console.log('xd');
+  }
+
 }
