@@ -8,12 +8,15 @@
             <h4 class="fontText">Bienvenido. </h4>
             <h4 class="fontText">Por favor ingresa los datos que se solicitan a continuación</h4>
         </div>
-        <form class="inputs">
-            <div>
-                <input type="text" class="form-control texto" placeholder="Clave Electoral">
+        <form [formGroup] = "loginForm" class="inputs" >
+            <div *ngIf = "error" class="alert alert-danger" role="alert">
+                <strong>{{mensajeError}}</strong>
             </div>
             <div>
-                <input type="email" class="form-control texto" placeholder="Email">
+                <input  type="email" class="form-control texto" placeholder="Email" formControlName = "email">
+            </div>
+            <div>
+                <input  type="text" class="form-control texto" placeholder="Clave Electoral" formControlName = "clave">
             </div>
             <div>
                 <button class="btn btn-primary loginB" type="button" role="button" (click)="login()">Iniciar Sesión</button>

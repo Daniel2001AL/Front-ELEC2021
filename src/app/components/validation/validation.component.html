@@ -1,24 +1,22 @@
 
-<div class="body">
+<div class="body" >
     <div class="container-fluid ">
         <div>
             <div style="text-align: center;">
                 <img class="img-responsive" src="https://www.ine.mx/wp-content/uploads/2017/04/logo-ine.png" alt="logoIne">
             </div>
             <br>
-            <div style="text-align: center;">
-                <h4 class="fontText">Por favor ingresa el codigo de verificacion</h4>
-                <h4 class="fontText">De no recibir el codigo solicitar reenvio</h4>
+            <div style="text-align: center;"*ngIf="user$ | async as user;">
+                <h4 class="fontText">Se ha enviado un correo de Verificacion a {{user?.email}}</h4>
+                <h4 class="fontText">Verificar su correo en el Enlace del correo de Verificacion</h4>
+                <h4 class="fontText">De no recibir el correo solicitar reenvio</h4>
             </div>
             <form class="inputs">
                 <div>
-                    <input type="number" class="form-control texto" placeholder="Codigo de verificacion">
+                    <button class="btn btn-primary loginB  b1" type="button" role="button" (click)="resend()">Volver a Enviar </button>
                 </div>
-                <div>
-                    <button class="btn btn-primary loginB  b1" type="button" role="button">Volver a Enviar </button>
-                </div>
-                <div>
-                    <button class="btn btn-primary loginB b2" type="button" role="button" (click)="login()">Iniciar Sesión</button>
+                <div >
+                    <button class="btn btn-primary loginB b2" type="button" role="button" (click)="login()">Continuar</button>
                 </div>
             </form>   
         </div>
